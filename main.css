@@ -1,0 +1,70 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.form {
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.input {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    outline: none;
+    user-select: none;
+}
+.btn {
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background: orange;
+    border-radius: 10px;
+    border: none;
+    user-select: none;
+}
+.btn:hover {
+    background: orangered;
+}
+.head {
+    color: grey;
+}
+.logText {
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 20px;
+}
+.logText__index {
+
+}
+.logText__date {}
+.logText__level {
+    font-size: 25px;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    background: white;
+    border-radius: 10px;
+    width: 80px;
+    color: grey;
+    text-shadow: none;
+}
+.logText__content {
+    font-size: 25px;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    background: white;
+    border-radius: 10px;
+    color: grey;
+    text-shadow: none;
+}
