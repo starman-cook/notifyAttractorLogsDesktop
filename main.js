@@ -1,5 +1,5 @@
 
-const baseUrl = 'http://localhost'
+const baseUrl = 'http://162.55.56.163'
 const port = "8001"
 
 const container = document.getElementById('container')
@@ -7,6 +7,10 @@ const form = document.getElementById('form')
 const inputDate = document.getElementById('date')
 const head = document.getElementById('head')
 const allLogsFrame = document.getElementById('allLogs')
+
+const today = new Date().toISOString().split('T')[0];
+inputDate.setAttribute('max', today);
+inputDate.setAttribute('value', today);
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
@@ -23,6 +27,7 @@ form.addEventListener('submit', async (e) => {
     try {
         const response = await fetch(`${baseUrl}:${port}/logs/${day}_${month}_${year}`)
         const data = await response.json()
+        allLogsFrame.innerHTML = ""
 
         if (data.length) {
             head.innerText = `${day}-${month}-${year}`
